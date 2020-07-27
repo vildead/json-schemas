@@ -1,7 +1,7 @@
 from unittest import TestCase
 from json import loads
 from jsonschema import validate
-from jsonschema.exceptions import SchemaError
+from jsonschema.exceptions import SchemaError, ValidationError
 import os
 
 # Fixtures
@@ -32,10 +32,10 @@ class TestJSONSchemas(TestCase):
             for item in data:
                 try:
                     validate(item, schema)
-                    self.assert_(True)
+                    self.assertTrue(True)
                 except SchemaError:
                    self.fail(f"JSONSchema {schema_filepath} is not valid - SchemaError.")
-                except:
+                except ValidationError:
                     self.fail(f"JSONSchema {schema_filepath} is not valid - failed on test data {data_filepath}")
                 finally:
                     dataFile.close()
