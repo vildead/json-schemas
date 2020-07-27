@@ -20,12 +20,12 @@ This repository stores JSON schemas used for validation of data by ELIXIR-LU too
 
 1. create Python virtual environment and activate
    ```bash
-   python -m virtualenv venv
+   python3 -m virtualenv venv
    source venv/bin/activate
    ```
 2. install dependencies
    ```
-   python setup.py
+   pip install .
    ```
 3. call tests
    ```
