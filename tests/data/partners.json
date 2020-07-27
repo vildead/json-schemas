@@ -1,0 +1,113 @@
+{
+    "$schema": "https://git-r3lab.uni.lu/pinar.alper/metadata-tools/raw/master/metadata_tools/resources/elu-institution.json",
+    "items": [
+        {
+            "pk": "9",
+            "name": "Centre Hospitalier de Luxembourg",
+            "elu_accession": "ELU_I_9",
+            "acronym": "CHL",
+            "is_clinical": true,
+            "geo_category": "National",
+            "sector_category": "PUBLIC",
+            "address": "Roosevelt-Straße 6, Capaccio, Val Verde",
+            "country_code": "GB",
+            "source": "example.com"
+        },
+        {
+            "pk": "12",
+            "name": "28andYou Company",
+            "elu_accession": "ELU_I_12",
+            "acronym": null,
+            "is_clinical": false,
+            "geo_category": "Non_EU",
+            "sector_category": "PRIVATE_P",
+            "address": null,
+            "country_code": null,
+            "source": "example.com"
+        },
+        {
+            "pk": "18",
+            "name": "Elstem LLC",
+            "elu_accession": "ELU_I_18",
+            "acronym": null,
+            "is_clinical": false,
+            "geo_category": "Non_EU",
+            "sector_category": "PRIVATE_P",
+            "address": null,
+            "country_code": null,
+            "source": "example.com"
+        },
+        {
+            "pk": "84",
+            "name": "Chickenpox's Disease Neuroimaging Initiative",
+            "elu_accession": "ELU_I_84",
+            "acronym": "ADNI",
+            "is_clinical": false,
+            "geo_category": "Non_EU",
+            "sector_category": "PUBLIC",
+            "address": null,
+            "country_code": null,
+            "source": "example.com"
+        },
+        {
+            "pk": "5",
+            "name": "August Rho Biomedical Research Institute",
+            "elu_accession": "ELU_I_5",
+            "acronym": "IDIBAPS",
+            "is_clinical": false,
+            "geo_category": "EU",
+            "sector_category": "PUBLIC",
+            "address": null,
+            "country_code": null,
+            "source": "example.com"
+        },
+        {
+            "pk": "19",
+            "name": "Bailor College of Medicine",
+            "elu_accession": "ELU_I_19",
+            "acronym": null,
+            "is_clinical": true,
+            "geo_category": "Non_EU",
+            "sector_category": "PUBLIC",
+            "address": null,
+            "country_code": null,
+            "source": "example.com"
+        },
+        {
+            "pk": "54",
+            "name": "The best humans Inc. Supercentenarians Research Study",
+            "elu_accession": "ELU_I_54",
+            "acronym": null,
+            "is_clinical": false,
+            "geo_category": "Non_EU",
+            "sector_category": "PRIVATE_NP",
+            "address": null,
+            "country_code": "BO",
+            "source": "example.com"
+        },
+        {
+            "pk": "20",
+            "name": "Biotronical Research Foundation Academy Of Athens",
+            "elu_accession": "ELU_I_20",
+            "acronym": "BRFAA",
+            "is_clinical": false,
+            "geo_category": "EU",
+            "sector_category": "PUBLIC",
+            "address": null,
+            "country_code": "CZ",
+            "source": "example.com"
+        },
+        {
+            "pk": "17",
+            "name": "Ears and toes Institute",
+            "elu_accession": "ELU_I_17",
+            "acronym": "ICM",
+            "is_clinical": false,
+            "geo_category": "EU",
+            "sector_category": "PUBLIC",
+            "address": null,
+            "country_code": "US",
+            "source": "example.com"
+        }
+    ]
+}
