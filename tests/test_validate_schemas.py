@@ -7,13 +7,12 @@ import os
 # Fixtures
 dirname = os.path.dirname(__file__)
 testdata_dir = os.path.abspath(os.path.join(dirname, "data/"))
-schema_dir = os.path.abspath(os.path.join(dirname,"../elixir-lu-json-schemas"))
+schema_dir = os.path.abspath(os.path.join(dirname, "../elixir-lu-json-schemas"))
 schema_testdata_filename_map = [
     ('elu-dataset.json', 'datasets.json'),
     ('elu-project.json', 'projects.json'),
     ('elu-institution.json', 'partners.json')
     ]
-
 
 
 class TestJSONSchemas(TestCase):
@@ -34,7 +33,7 @@ class TestJSONSchemas(TestCase):
                     validate(item, schema)
                     self.assertTrue(True)
                 except SchemaError:
-                   self.fail(f"JSONSchema {schema_filepath} is not valid - SchemaError.")
+                    self.fail(f"JSONSchema {schema_filepath} is not valid - SchemaError.")
                 except ValidationError:
                     self.fail(f"JSONSchema {schema_filepath} is not valid - failed on test data {data_filepath}")
                 finally:
