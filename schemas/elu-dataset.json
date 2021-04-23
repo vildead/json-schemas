@@ -5,7 +5,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "https://github.com/elixir-luxembourg/json-schemas/raw/first-commit/elixir-lu-json-schemas/elu-core.json"
+      "$ref": "https://git-r3lab.uni.lu/pinar.alper/metadata-tools/raw/master/metadata_tools/resources/elu-core.json"
     }
   ],
   "properties": {
@@ -23,6 +23,12 @@
       "type": "array",
       "items": {
         "$ref": "#/definitions/elu:storage"
+      }
+    },
+    "legal_bases": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/elu:legal_basis"
       }
     },
     "transfers": {
@@ -57,6 +63,54 @@
         }
       }
     },
+    "elu:legal_basis": {
+      "type": "object",
+      "properties": {
+        "data_declarations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "legal_basis_codes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "6.1(a)",
+              "6.1(b)",
+              "6.1(c)",
+              "6.1(d)",
+              "6.1(e)",
+              "6.1(f)"
+            ]
+          }},
+        "personal_data_codes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "Standard",
+              "Special",
+              "Race",
+              "Genetic",
+              "Biometric",
+              "Health",
+              "Sexual orientation",
+              "Convictions",
+              "Other"
+            ]
+          }
+        },
+        "legal_basis_notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "legal_basis_codes",
+        "personal_data_codes"
+      ]
+    },
     "elu:data": {
       "type": "object",
       "properties": {
@@ -68,7 +122,7 @@
           "items": {
             "type": "object",
             "properties": {
-              "ga4gh_code": {
+              "use_class": {
                 "type": "string",
                 "enum": [
                   "NRES",
@@ -90,16 +144,35 @@
                   "TS-[XX]",
                   "US",
                   "PS",
-                  "IS"
+                  "IS",
+                  "IP",
+                  "Other"
                 ]
               },
-              "note": {
+              "use_class_note": {
                 "type": "string"
+              },
+              "use_restriction_rule": {
+                "type": "string",
+                "enum": [
+                  "CONSTRAINTS",
+                  "NO_CONSTRAINTS",
+                  "FORBIDDEN"
+                ]
+              },
+              "use_restriction_objects": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "use_restriction_note": {
+                  "type": "string"
+                }
               }
             },
             "required": [
-              "ga4gh_code",
-              "note"
+              "use_class_note",
+              "use_restriction_rule"
             ]
           }
         },
@@ -150,7 +223,8 @@
             "type": "string",
             "enum": [
               "open-access",
-              "controlled-access"
+              "controlled-access",
+              "registered-access"
             ]
           },
           "subjects_category": {
@@ -178,6 +252,9 @@
               "homogeneous"
             ]
           },
+          "consent_status_description": {
+            "type": "string"
+          },
           "has_special_subjects": {
             "type": "boolean"
           },
@@ -201,3 +278,4 @@
     }
   }
 }
+

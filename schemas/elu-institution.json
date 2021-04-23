@@ -11,7 +11,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "https://github.com/elixir-luxembourg/json-schemas/raw/first-commit/elixir-lu-json-schemas/elu-core.json"
+          "$ref": "https://git-r3lab.uni.lu/pinar.alper/metadata-tools/raw/master/metadata_tools/resources/elu-core.json"
         }
       ],
       "properties": {
@@ -47,3 +47,4 @@
     }
   }
 }
+
