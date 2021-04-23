@@ -1,0 +1,49 @@
+{
+  "description": "Submission Schema",
+  "title": "A JSON Schema for describing submissions in the ELIXIR Data Submission System a.k.a. DISH.",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "#/definitions/elu:submission"
+    }
+  ],
+  "definitions": {
+    "elu:submission": {
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "https://git-r3lab.uni.lu/pinar.alper/metadata-tools/raw/master/metadata_tools/resources/elu-core.json"
+        }
+      ],
+      "properties": {
+        "studies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "allOf": [
+              {
+                "$ref": "https://git-r3lab.uni.lu/pinar.alper/metadata-tools/raw/master/metadata_tools/resources/elu-study.json"
+              }
+            ]
+          },
+          "datasets": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "allOf": [
+                {
+                  "$ref": "https://git-r3lab.uni.lu/pinar.alper/metadata-tools/raw/master/metadata_tools/resources/elu-dataset.json"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
