@@ -30,6 +30,9 @@
     "other_external_id": {
       "type": ["string", "null"]
     },
+    "url": {
+      "type":  ["string", "null"]
+    },
     "contacts": {
       "type": "array",
       "items": {
@@ -77,3 +80,4 @@
     }
   }
 }
+
