@@ -7,7 +7,7 @@ import os
 # Fixtures
 dirname = os.path.dirname(__file__)
 testdata_dir = os.path.abspath(os.path.join(dirname, "data/"))
-schema_dir = os.path.abspath(os.path.join(dirname, "../elixir-lu-json-schemas"))
+schema_dir = os.path.abspath(os.path.join(dirname, "../schemas"))
 schema_testdata_filename_map = [
     ('elu-dataset.json', 'datasets.json'),
     ('elu-project.json', 'projects.json'),
