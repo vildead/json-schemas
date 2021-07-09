@@ -22,7 +22,7 @@
     "description": {
       "type":  ["string", "null"]
     },
-    "elu_accession": {
+    "external_id": {
       "type": ["string", "null"]
     },
     "elu_uuid": {
