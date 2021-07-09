@@ -4,7 +4,7 @@
         {
             "pk": "9",
             "name": "Centre Hospitalier de Luxembourg",
-            "elu_accession": "ELU_I_9",
+            "external_id": "ELU_I_9",
             "acronym": "CHL",
             "is_clinical": true,
             "geo_category": "National",
@@ -16,7 +16,7 @@
         {
             "pk": "12",
             "name": "28andYou Company",
-            "elu_accession": "ELU_I_12",
+            "external_id": "ELU_I_12",
             "acronym": null,
             "is_clinical": false,
             "geo_category": "Non_EU",
@@ -28,7 +28,7 @@
         {
             "pk": "18",
             "name": "Elstem LLC",
-            "elu_accession": "ELU_I_18",
+            "external_id": "ELU_I_18",
             "acronym": null,
             "is_clinical": false,
             "geo_category": "Non_EU",
@@ -40,7 +40,7 @@
         {
             "pk": "84",
             "name": "Chickenpox's Disease Neuroimaging Initiative",
-            "elu_accession": "ELU_I_84",
+            "external_id": "ELU_I_84",
             "acronym": "ADNI",
             "is_clinical": false,
             "geo_category": "Non_EU",
@@ -52,7 +52,7 @@
         {
             "pk": "5",
             "name": "August Rho Biomedical Research Institute",
-            "elu_accession": "ELU_I_5",
+            "external_id": "ELU_I_5",
             "acronym": "IDIBAPS",
             "is_clinical": false,
             "geo_category": "EU",
@@ -64,7 +64,7 @@
         {
             "pk": "19",
             "name": "Bailor College of Medicine",
-            "elu_accession": "ELU_I_19",
+            "external_id": "ELU_I_19",
             "acronym": null,
             "is_clinical": true,
             "geo_category": "Non_EU",
@@ -76,7 +76,7 @@
         {
             "pk": "54",
             "name": "The best humans Inc. Supercentenarians Research Study",
-            "elu_accession": "ELU_I_54",
+            "external_id": "ELU_I_54",
             "acronym": null,
             "is_clinical": false,
             "geo_category": "Non_EU",
@@ -88,7 +88,7 @@
         {
             "pk": "20",
             "name": "Biotronical Research Foundation Academy Of Athens",
-            "elu_accession": "ELU_I_20",
+            "external_id": "ELU_I_20",
             "acronym": "BRFAA",
             "is_clinical": false,
             "geo_category": "EU",
@@ -100,7 +100,7 @@
         {
             "pk": "17",
             "name": "Ears and toes Institute",
-            "elu_accession": "ELU_I_17",
+            "external_id": "ELU_I_17",
             "acronym": "ICM",
             "is_clinical": false,
             "geo_category": "EU",

@@ -1,6 +1,6 @@
 from unittest import TestCase
 from json import loads
-from jsonschema import validate
+from jsonschema import validate, Draft4Validator
 from jsonschema.exceptions import SchemaError, ValidationError
 import os
 
@@ -39,3 +39,12 @@ class TestJSONSchemas(TestCase):
                 finally:
                     dataFile.close()
                     schemaFile.close()
+
+    def test_schema_version(self):
+        for file in os.listdir(schema_dir):
+            try:
+                schema_file = open(os.path.join(schema_dir, file), encoding='utf-8')
+                schema = loads(schema_file.read())
+                Draft4Validator.check_schema(schema)
+            finally:
+                schema_file.close()
