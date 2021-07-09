@@ -1,4 +1,5 @@
 {
+  "$id": "https://raw.githubusercontent.com/elixir-luxembourg/json-schemas/master/schemas/elu-submission.json",
   "title": "Submission Schema",
   "description": "A JSON Schema for describing submissions in the ELIXIR Data Submission System a.k.a. DISH.",
   "$schema": "http://json-schema.org/draft-04/schema#",
