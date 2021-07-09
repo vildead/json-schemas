@@ -1,6 +1,6 @@
 {
-  "description": "ELIXIR Luxembourg Projects Schema",
-  "title": "A JSON Schema for describing biomedical research Projects.",
+  "title": "ELIXIR Luxembourg Datasets Schema",
+  "description": "A JSON Schema for describing biomedical research Datasets.",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "allOf": [

@@ -1,6 +1,6 @@
 {
-  "description": "ELIXIR Luxembourg Partner Schema",
-  "title": "A JSON Schema for describing partners institutes.",
+  "title": "ELIXIR Luxembourg Partner Schema",
+  "description": "A JSON Schema for describing partners institutes.",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "allOf": [{

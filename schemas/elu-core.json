@@ -1,6 +1,6 @@
 {
-  "description": "ELIXIR Luxembourg Core json schema",
-  "title": "Schema containing core attributes for any json serialisable ELIXIR Luxembourg record.",
+  "title": "ELIXIR Luxembourg Core json schema",
+  "description": "Schema containing core attributes for any json serialisable ELIXIR Luxembourg record.",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "required": [

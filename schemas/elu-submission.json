@@ -1,6 +1,6 @@
 {
-  "description": "Submission Schema",
-  "title": "A JSON Schema for describing submissions in the ELIXIR Data Submission System a.k.a. DISH.",
+  "title": "Submission Schema",
+  "description": "A JSON Schema for describing submissions in the ELIXIR Data Submission System a.k.a. DISH.",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "allOf": [
