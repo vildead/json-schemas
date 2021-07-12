@@ -35,9 +35,6 @@ class TestJSONSchemas(TestCase):
                     self.fail(f"JSONSchema {schema_filepath} is not valid - SchemaError.")
                 except ValidationError:
                     self.fail(f"JSONSchema {schema_filepath} is not valid - failed on test data {data_filepath}")
-                finally:
-                    dataFile.close()
-                    schemaFile.close()
 
     def test_schema_version(self):
         for file in os.listdir(schema_dir):
