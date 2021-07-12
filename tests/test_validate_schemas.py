@@ -20,13 +20,12 @@ class TestJSONSchemas(TestCase):
     def test_validation(self):
         for schema_filename, dataset_filename in schema_testdata_filename_map:
             schema_filepath = os.path.abspath(os.path.join(schema_dir, schema_filename))
-            schemaFile = open(os.path.join(schema_dir, schema_filename), encoding='utf-8')
-
+            with open(schema_filepath) as f:
+                schema = loads(f.read())
+            
             data_filepath = os.path.abspath(os.path.join(testdata_dir, dataset_filename))
-            dataFile = open(data_filepath, encoding='utf-8')
-
-            schema = loads(schemaFile.read())
-            data = loads(dataFile.read())['items']
+            with open(data_filepath) as f:
+                data  = loads(f.read())['items']
 
             for item in data:
                 try:
