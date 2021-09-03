@@ -241,8 +241,8 @@
         "de_identification": {
           "type": "string",
           "enum": [
-            "anonymized",
-            "pseudonymized"
+            "anonymization",
+            "pseudonymization"
           ]
         },
         "consent_status": {
