@@ -231,15 +231,12 @@
           ]
         },
         "subjects_category": {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "enum": [
-              "cases",
-              "controls",
-              "cases_and_controls"
-            ]
-          }
+          "type": "string",
+          "enum": [
+            "cases",
+            "controls",
+            "cases_and_controls"
+          ]
         },
         "de_identification": {
           "type": "string",
