@@ -262,7 +262,7 @@
           "type": "string"
         },
         "embargo_date": {
-          "type": "string",
+          "type": ["string","null"],
           "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
         },
         "storage_end_date": {
