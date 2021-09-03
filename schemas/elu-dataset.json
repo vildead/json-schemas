@@ -225,9 +225,9 @@
         "access_category": {
           "type": "string",
           "enum": [
-            "open-access",
-            "controlled-access",
-            "registered-access"
+            "open_access",
+            "controlled_access",
+            "registered_access"
           ]
         },
         "subjects_category": {

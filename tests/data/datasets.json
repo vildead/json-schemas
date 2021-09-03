@@ -15,7 +15,7 @@
                         "Whole_genome_sequencing"
                     ],
                     "data_type_notes": "Chip-seq  time series data",
-                    "access_category": "controlled-access",
+                    "access_category": "controlled_access",
                     "subjects_category": "controls",
                     "de_identification": "pseudonymization",
                     "source": "https://example.com",
