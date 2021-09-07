@@ -84,7 +84,7 @@ BASE_URI='https:\/\/raw.githubusercontent.com\/elixir-luxembourg\/json-schemas'
 find schemas/ -type f -exec sed -i "s/$BASE_URI\/v$BASE_STRING/https:\/\/raw.githubusercontent.com\/elixir-luxembourg\/json-schemas\/v$INPUT_STRING/g" {} \;
 find tests/ -type f -exec sed -i "s/$BASE_URI\/v$BASE_STRING/https:\/\/raw.githubusercontent.com\/elixir-luxembourg\/json-schemas\/v$INPUT_STRING/g" {} \;
 git add schemas/. tests/.
-
+git add VERSION
 # Commit all changes
 #git add CHANGELOG.md VERSION
 #git commit -m "Bump version to ${INPUT_STRING}."
