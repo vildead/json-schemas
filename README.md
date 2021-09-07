@@ -31,3 +31,25 @@ This repository stores JSON schemas used for validation of data by ELIXIR-LU too
    ```
    python -m unittest
    ```
+
+## Bump version
+
+1. Ensure you have no uncommited changes and you are on `master` branch
+
+```bash
+   git status
+   git checkout master
+```
+
+2. run `bump_version.sh` script
+
+```bash
+   chown +x bump_version.sh
+   source bump_version.sh
+```
+
+3. Inspect changes and push to remote repository
+
+```bash
+   git push origin --tag
+```
