@@ -246,10 +246,10 @@
           ]
         },
         "consent_status": {
-          "type": "string",
           "enum": [
             "heterogeneous",
-            "homogeneous"
+            "homogeneous",
+            null
           ]
         },
         "consent_status_description": {
