@@ -44,8 +44,13 @@ git update-index --refresh
 git diff-index --quiet HEAD --
 [  $? -ne 0 ] && echo -e "${RED}Uncommited changes were found. Please commit all changes first or stash them." && exit
 
-# Get new version and update VERSION file
+# Get new version
 BASE_STRING=`cat VERSION`
+
+# Check that VERSION is the same as latest tag
+TAG_VERSION=$(git describe --abbrev=0)
+[[ "$TAG_VERSION" != "v$BASE_STRING" ]] && echo -e "${WARNING_FLAG}Latest tag on current branch ($TAG_VERSION) is not matching version in VERSION file ($BASE_STRING). Version from VERSION file will be used."
+
 BASE_LIST=(`echo $BASE_STRING | tr '.' ' '`)
 V_MAJOR=${BASE_LIST[0]}
 V_MINOR=${BASE_LIST[1]}
