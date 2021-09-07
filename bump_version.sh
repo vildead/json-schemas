@@ -88,7 +88,7 @@ git add VERSION
 # Commit all changes
 #git add CHANGELOG.md VERSION
 git commit -m "Bump version to ${INPUT_STRING}."
-git tag -m "Tag version ${INPUT_STRING}." "v$INPUT_STRING"
+git tag "v$INPUT_STRING"
 
 
 echo -e "${NOTICE_FLAG} Finished. Run 'git push origin --tag' to push changes to remote repository."
