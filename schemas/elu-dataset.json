@@ -246,17 +246,17 @@
           ]
         },
         "consent_status": {
-          "type": "string",
           "enum": [
             "heterogeneous",
-            "homogeneous"
+            "homogeneous",
+            null
           ]
         },
         "consent_status_description": {
           "type": "string"
         },
         "has_special_subjects": {
-          "type": "boolean"
+          "type": ["boolean", "null"]
         },
         "special_subjects_description": {
           "type": "string"
