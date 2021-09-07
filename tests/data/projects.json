@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/elixir-luxembourg/json-schemas/v0.0.4/schemas/elu-project.json",
+    "$schema": "https://raw.githubusercontent.com/elixir-luxembourg/json-schemas/v0.0.6/schemas/elu-project.json",
     "items": [
         {
             "acronym": "EPIC-DREM",
